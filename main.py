@@ -1,8 +1,8 @@
-from fastapi import FastAPI
+from flask import Flask
 from messages import messages
 from random import choice
 
-app = FastAPI()
+app = Flask(__name__)
 
 
 @app.get("/")
